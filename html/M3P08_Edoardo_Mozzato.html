@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fatorial de um Número</h1>
+        <p>Este programa calcula o fatorial de um número entre 1 e 10.</p>
+        <p>Digite um número e pressione Enter ou clique no botão para calcular.</p>
+    <div> <!-- 
+            Label for a number input field. -->
+        <label for="inputNumero">Escolha um número entre 1 e 10</label>
+        <!-- 
+            Input field for entering a number (maximum 2 digits). -->
+        <input type="text" id="inputNumero" maxlength="2" placeholder="Numero" 
+        onkeypress="if(event.key==='Enter')"></input>   
+    </div>
+    <!-- 
+        Button to trigger the calculation of the factorial.
+        When clicked, it calls the JavaScript function 'calcolarFatorial()'.
+    -->
+    <button onclick="calcolarFatorial()">Calcular</button>
+
+    <!-- 
+        This <div> element with the id "resultado" is intended to display 
+            the result of a computation or user interaction.-->
+    <div id="resultado"></div>
+
+    <!--
+        This HTML snippet includes a reference to an external JavaScript file named "fatorial.js"
+    -->
+    <script src="../js/fatorial.js"></script>
+</body>
+</html>
